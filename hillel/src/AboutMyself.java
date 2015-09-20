@@ -1,32 +1,26 @@
 import java.util.*;
-/**
- * Created by User on 20.09.2015.
- */
+
 public class AboutMyself {
     public static void main (String args[]){
         Scanner scanner = new Scanner(System.in);
-        String firstName, lastName;
-        int dob, currentDate;
+        char space = ' ';
 
         System.out.println ("Enter Your FirsName: ");
-        firstName = scanner.nextLine();
+        String firstName = scanner.nextLine();
         firstName = firstName.replace(" ", "");
 
         System.out.println ("Enter Your LastName: ");
-        lastName = scanner.nextLine();
+        String lastName = scanner.nextLine();
         lastName = lastName.replace(" ", "");
 
         System.out.println ("Please Enter Your Birth Year: ");
-        dob = scanner.nextInt();
+        int dob = scanner.nextInt();
 
         System.out.println ("Please Enter Your Birth Year: ");
-        currentDate = scanner.nextInt();
+        int currentDate = scanner.nextInt();
 
         System.out.println ("Your Name Is: " + firstName + " " + lastName);
+        System.out.println ("Your Name Is: " + firstName + space + lastName);
         System.out.println ("And Your age Is: " + (currentDate - dob));
-
-
-
-
     }
 }
