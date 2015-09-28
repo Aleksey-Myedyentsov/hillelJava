@@ -25,5 +25,6 @@ public class DataTypes {
         float f = 2.5F;
 
         System.out.println(milliseconds);
+
     }
 }
