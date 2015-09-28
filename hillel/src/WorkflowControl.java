@@ -5,6 +5,70 @@ import java.util.Scanner;
  */
 public class WorkflowControl {
     public static void main(String[] args) {
+
+        ternaryExample();
+
+    }
+
+    private static void ternaryExample() {
+        int number = 5;
+        String isEven = isEven(number);
+
+        isEven = (number % 2 == 0) ? "yes" : "no"; //ternar operaitor
+    }
+
+    public static String isEven(int someNumber) {
+        if (someNumber % 2 == 0) {
+            return "yes";
+        } else {
+            return "no";
+        }
+    }
+
+    private static void swithCaseStringExample() {
+        String month = "mar";
+        switch (month) {
+            case "jan":
+            case "feb":
+            case "dec":
+                System.out.println("winter");
+                break;
+            case "mar":
+            case "apr":
+            case "may":
+                System.out.println("spring");
+                break;
+            default:
+                System.out.println("wrong month name: " + month);
+                break;
+        }
+    }
+
+    private static void switchCaseExample() {
+        int month = 13;
+        switch (month) {
+            case 1:
+                System.out.println("jan");
+                break;
+            case 5:
+                System.out.println("may");
+                break;
+            case 8:
+                System.out.println("aug");
+                break;
+            case 12:
+                System.out.print("dec");
+                break;
+            default:
+                System.out.println("Wrong month number");
+                break;
+            case 2:
+                System.out.println("fed");
+                break;
+        }
+    }
+
+    private static void ifExample() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("please enter age: ");
         int age = scanner.nextInt();

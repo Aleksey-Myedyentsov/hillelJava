@@ -3,6 +3,43 @@
  */
 public class DataTypes {
     public static void main(String[] args) {
+        byte b = 120;
+        short s = b;
+        long l = s;
+
+        double d = l;
+
+        l = 15;
+        int maxValue = Integer.MAX_VALUE;
+        System.out.println("integer max value is: " + maxValue);
+        long intMaxValue = maxValue;
+        long intOverflow = intMaxValue + 1;
+
+        int i = (int) intOverflow;
+        System.out.println("overflowed int: " + i);
+
+        d = Math.PI;
+
+        i = (int) d;
+
+        System.out.println("PI is: " + i);
+
+        i = (int) 3.9;
+
+        System.out.println("3.9 after converting: " + i);
+
+    }
+
+    private static void realNumberComparison() {
+        if (1.1 + 2.2 == 3.3) {
+            System.out.println("they are equal");
+        } else {
+            System.out.println("they aren't equal");
+        }
+        System.out.println("1.1 + 2.2 = " + (1.1 + 2.2));
+    }
+
+    private static void primitiveDataTypes() {
         int age = 31;
 
         int days = age * 365;
@@ -25,6 +62,5 @@ public class DataTypes {
         float f = 2.5F;
 
         System.out.println(milliseconds);
-
     }
 }
