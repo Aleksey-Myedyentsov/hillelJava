@@ -6,8 +6,17 @@ import java.util.Scanner;
 public class WorkflowControl {
     public static void main(String[] args) {
 
-        ternaryExample();
+        double d = 2.0;
+        isEven((int) d);
+        //isEven((int) d, true);
 
+    }
+
+    private static void neTrue() {
+        boolean todayIsThursday = true;
+        boolean iShouldStudyJava = true;
+        todayIsThursday = !(todayIsThursday && iShouldStudyJava);
+        boolean isEven = !isOdd(10);
     }
 
     private static void ternaryExample() {
@@ -17,13 +26,28 @@ public class WorkflowControl {
         isEven = (number % 2 == 0) ? "yes" : "no"; //ternar operaitor
     }
 
+    private static boolean isOdd(int someNumber) {
+        return someNumber % 2 != 0;
+    }
+
     public static String isEven(int someNumber) {
+        System.out.println("int");
         if (someNumber % 2 == 0) {
             return "yes";
         } else {
             return "no";
         }
     }
+
+    //public static boolean isEven(int someNumber, boolean){
+
+    //}
+
+    public static boolean isEven(double someNumber) {
+        System.out.println("double");
+        return someNumber % 2 == 0;
+    }
+
 
     private static void swithCaseStringExample() {
         String month = "mar";

@@ -17,7 +17,7 @@ public class Calculator {
         System.out.println("Enter the first number:");
         double firstNum = scanner.nextDouble();
 
-        System.out.println("Enter a sign of operation:");
+        System.out.println("Enter a sign of operation: +, -, *, /, trunk, fract");
         String operation = scanner.next();
 
         if (operation.equals("trunk")) {
