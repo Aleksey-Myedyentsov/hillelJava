@@ -10,8 +10,8 @@ public class GuessTheNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-        int randNum = random.nextInt(11);
-        int i = 1;
+        int randNum = 5;//random.nextInt(11);
+        int i = 0;
 
         System.out.println("Enter the number: ");
         int number = scanner.nextInt();

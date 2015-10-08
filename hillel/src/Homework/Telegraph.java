@@ -15,6 +15,7 @@ public class Telegraph {
         double price = scanner.nextDouble();
 
         System.out.println("Enter the text of message:");
+        scanner.nextLine();
         String message = scanner.nextLine();
         //String message = "One Two";
         String words[] = message.split(" ");
