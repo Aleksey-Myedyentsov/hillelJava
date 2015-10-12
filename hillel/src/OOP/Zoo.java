@@ -62,7 +62,7 @@ public class Zoo {
             System.out.println("thise cat is domestic animal");
         }
         if (Cat.predator) {
-            System.out.println("catis predator");
+            System.out.println("cat is predator");
         }
 
         Cat tomCat = new Cat(true, 3, "Tom", "Blue-gray");
