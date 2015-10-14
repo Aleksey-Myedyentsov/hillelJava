@@ -10,7 +10,7 @@ public class Zoo {
         String sound = tomCat1.makeSound();
         System.out.println(sound);
 
-        Animal animal = new Animal();
+        //Animal animal = new Animal(); for abstract class
 
         Cat cat = new Cat();
 
@@ -29,7 +29,15 @@ public class Zoo {
 
         System.out.println("polymorphism equalse: " + cat1.equals(cat2));
 
-        Object[] objects = new Object[3];
+        polymorphismExample();
+
+        Animal someAnimal = new Cat();
+        someAnimal.makeSound();
+
+    }
+
+    private static void polymorphismExample() {
+        Object[] objects = new Object[10];
 
         objects[0] = "some string";
         objects[1] = new Cat(true, 3, "Tom", "Blue-gray");
@@ -38,7 +46,6 @@ public class Zoo {
         for (Object o : objects) {
             System.out.println(o.toString());
         }
-
     }
 
     private static void equalseExample() {
