@@ -14,6 +14,7 @@ public class Zoo {
 
         Cat cat = new Cat();
 
+
         Animal animalCat = new Cat();
 
         sound = animalCat.makeSound();
@@ -33,6 +34,7 @@ public class Zoo {
 
         Animal someAnimal = new Cat();
         someAnimal.makeSound();
+
 
     }
 
@@ -83,6 +85,6 @@ public class Zoo {
         System.out.println("is pet " + cat.pet);
 
         System.out.println(tomCat.name);
-        System.out.println(mursik.age);
+        // System.out.println(mursik.age);
     }
 }
