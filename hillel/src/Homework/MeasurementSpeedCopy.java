@@ -9,7 +9,7 @@ import java.nio.charset.Charset;
 public class MeasurementSpeedCopy {
     public static void main(String[] args) {
         bufferedCopy();
-        streemCopy();
+        streamCopy();
 
     }
 
@@ -31,7 +31,7 @@ public class MeasurementSpeedCopy {
         System.out.println("Time stream buffer (mSec): " + time);
     }
 
-    private static void streemCopy() {
+    private static void streamCopy() {
         long start = System.currentTimeMillis();
         try (InputStream inputStream = new FileInputStream("d:/File.txt");
              OutputStream outputStream = new FileOutputStream("d:/copyFile1.txt")
